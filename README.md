@@ -14,6 +14,7 @@ data/:
             Contient les images d'entraînement (format .tiff).
         train_annotations/:
             Contiens les masques encodés en RLE correspondant (format .json).
+    Il est téléchargeable à l'adresse suivante: https://www.kaggle.com/competitions/hubmap-organ-segmentation/data
 submission.csv:
     Résultat de la prédiction du modèle entraîné sur les images
     contenues dans le dossier de test.

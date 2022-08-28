@@ -1,4 +1,3 @@
-from pyexpat import model
 import sys
 from traceback import print_tb
 import pickle
@@ -346,6 +345,7 @@ def Main():
         print("Problème rencontré lors de la sauvegarde du modèle; le programme continue.")
     print("Entraînement terminé, prédiction depuis test.csv:")
     df_pred = get_data_for_predict()
+    # On effectue la prédiction:
     df_result = get_submit_csv(df_pred, unet_model)
     print(df_result)
     print("Terminé")
